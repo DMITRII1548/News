@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NBC NEWS</title>
+    <link rel="shortcut icon" href="./../imgs/header/logo.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,7 +15,11 @@
         <a href="#" class="header__logo">
             <img src="./../imgs/header/logo.svg" alt="Логотип">
         </a>
-        <img src="./../imgs/header/search.svg" alt="Поиск" class="header__search">
+        <img src="./../imgs/header/search.svg" alt="Поиск" id="search-btn" class="header__search">
+        <form action="#" method="post" class="header__form none" id="search-form"> 
+            <input type="text" name="title" id="title" placeholder="looking for" class="header__input">
+            <button type="submit" class="header__btn"><img src="./../imgs/header/search.svg" alt="Поиск" class="header__search"></button>
+        </form>
     </header>
     <main class="main" style="background: #F7F4F4;">
         <section class="heading">
@@ -23,13 +28,14 @@
                 <div class="heading__top">
                     <h5>Trending</h5>
                     <div class="heading__icons">
-                        <img src="./../imgs/card/like.svg" alt="Лайк">
+                        <img src="./../imgs/card/like.svg" id="share">
                         <img src="./../imgs/card/repost.svg" alt="Поделиться">
                         <img src="./../imgs/card/save.svg" alt="Заметки">
                     </div>
                 </div>
                 <div class="heading__middle">
                     <h1>Cake meme reflects coronavirus absurdity in a world where nothing is what it seems</h1>
+                    <img src="./../imgs/card/imgs/main.jpg" alt="" class="heading__img--mobile">
                     <p class="heading__text">
                         Earlier this month, a viral video depicting hyper-realistic cakes as everyday items had folks on social media double-guessing every other post, and sometimes even their own realities, effectively launching the next meme : “Is this real or is this cake?”
                     </p>
@@ -45,11 +51,272 @@
             </div>
         </section>
         <section class="error-alert">
+            <button class="error-alert__btn">Breaking News</button>
+            <h3 class="error-alert__title">
+                Kanye West says he's running for president in 2020.
+            </h3>
+        </section>
+        <section class="cards">
+            <div class="cards__nav">
+                <h3 class="cards__title">News</h3>
+                <img src="./../imgs/card/nav.svg" alt="Навигация" class="cards__nav-img">
+            </div>
+            <div class="cards__wrapper">
+                <div class="card">
+                    <img src="./../imgs/card/imgs/1.jpg" alt="Карточка" class="card__img">
+                    <div class="card__wrapper">
+                        <h4 class="card__title">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                        <p class="card__text">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        <div class="card__info">
+                            <span>2 hours ago</span>
+                            <span>By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <ul class="card__actions">
+                            <li class="card__action">
+                                <img src="./../imgs/card/like-active.svg" alt="Лайл">
+                                <span class="card__count">29</span>
+                            </li>
+                            <li class="card__action" id="share">
+                                <img src="./../imgs/card/repost.svg" alt="Поделиться">
+                                <span class="card__count">71</span>
+                            </li>
+                            <li class="card__action">
+                                <img src="./../imgs/card/save.svg" alt="Сохранить">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../imgs/card/imgs/1.jpg" alt="Карточка" class="card__img">
+                    <div class="card__wrapper">
+                        <h4 class="card__title">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                        <p class="card__text">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        <div class="card__info">
+                            <span>2 hours ago</span>
+                            <span>By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <ul class="card__actions">
+                            <li class="card__action">
+                                <img src="./../imgs/card/like.svg" alt="Лайл">
+                                <span class="card__count">29</span>
+                            </li>
+                            <li class="card__action" id="share">
+                                <img src="./../imgs/card/repost.svg" alt="Поделиться">
+                                <span class="card__count">71</span>
+                            </li>
+                            <li class="card__action">
+                                <img src="./../imgs/card/save.svg" alt="Сохранить">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../imgs/card/imgs/1.jpg" alt="Карточка" class="card__img">
+                    <div class="card__wrapper">
+                        <h4 class="card__title">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                        <p class="card__text">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        <div class="card__info">
+                            <span>2 hours ago</span>
+                            <span>By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <ul class="card__actions">
+                            <li class="card__action">
+                                <img src="./../imgs/card/like.svg" alt="Лайл">
+                                <span class="card__count">29</span>
+                            </li>
+                            <li class="card__action" id="share">
+                                <img src="./../imgs/card/repost.svg" alt="Поделиться">
+                                <span class="card__count">71</span>
+                            </li>
+                            <li class="card__action">
+                                <img src="./../imgs/card/save.svg" alt="Сохранить">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../imgs/card/imgs/1.jpg" alt="Карточка" class="card__img">
+                    <div class="card__wrapper">
+                        <h4 class="card__title">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                        <p class="card__text">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        <div class="card__info">
+                            <span>2 hours ago</span>
+                            <span>By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <ul class="card__actions">
+                            <li class="card__action">
+                                <img src="./../imgs/card/like.svg" alt="Лайл">
+                                <span class="card__count">29</span>
+                            </li>
+                            <li class="card__action" id="share">
+                                <img src="./../imgs/card/repost.svg" alt="Поделиться">
+                                <span class="card__count">71</span>
+                            </li>
+                            <li class="card__action">
+                                <img src="./../imgs/card/save.svg" alt="Сохранить">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../imgs/card/imgs/1.jpg" alt="Карточка" class="card__img">
+                    <div class="card__wrapper">
+                        <h4 class="card__title">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                        <p class="card__text">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        <div class="card__info">
+                            <span>2 hours ago</span>
+                            <span>By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <ul class="card__actions">
+                            <li class="card__action">
+                                <img src="./../imgs/card/like.svg" alt="Лайл">
+                                <span class="card__count">29</span>
+                            </li>
+                            <li class="card__action" id="share">
+                                <img src="./../imgs/card/repost.svg" alt="Поделиться">
+                                <span class="card__count">71</span>
+                            </li>
+                            <li class="card__action">
+                                <img src="./../imgs/card/save.svg" alt="Сохранить">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./../imgs/card/imgs/1.jpg" alt="Карточка" class="card__img">
+                    <div class="card__wrapper">
+                        <h4 class="card__title">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                        <p class="card__text">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama.</p>
+                        <div class="card__info">
+                            <span>2 hours ago</span>
+                            <span>By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <ul class="card__actions">
+                            <li class="card__action">
+                                <img src="./../imgs/card/like.svg" alt="Лайл">
+                                <span class="card__count">29</span>
+                            </li>
+                            <li class="card__action" id="share">
+                                <img src="./../imgs/card/repost.svg" alt="Поделиться">
+                                <span class="card__count">71</span>
+                            </li>
+                            <li class="card__action">
+                                <img src="./../imgs/card/save.svg" alt="Сохранить">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="cards__btn">
+                View More
+            </button>
+        </section>
+        <section class="slider">
+            <div class="slider__title">
+                <h4>Editor’s Picks</h4>
+                <img src="./../imgs/card/star.svg" alt="Звезда">
+            </div>
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider-card">
+                        <img src="./../imgs/card/slider/1.jpg" alt="" class="slider-card__img">
+                        <h5 class="slider-card__title--mobile">
+                            Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?
+                        </h5>
+                        <div class="slider-card__wrapper">
+                            <h4 class="slider-card__title">Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?</h4>
+                            <p class="slider-card__text">
+                                The authorities are hoping to find that a substantial proportion of the population has already been infected with the virus – and so is immune.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="./../imgs/card/slider/1.jpg" alt="" class="slider-card__img">
+                        <h5 class="slider-card__title--mobile">
+                            Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?
+                        </h5>
+                        <div class="slider-card__wrapper">
+                            <h4 class="slider-card__title">Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?</h4>
+                            <p class="slider-card__text">
+                                The authorities are hoping to find that a substantial proportion of the population has already been infected with the virus – and so is immune.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="./../imgs/card/slider/1.jpg" alt="" class="slider-card__img">
+                        <h5 class="slider-card__title--mobile">
+                            Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?
+                        </h5>
+                        <div class="slider-card__wrapper">
+                            <h4 class="slider-card__title">Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?</h4>
+                            <p class="slider-card__text">
+                                The authorities are hoping to find that a substantial proportion of the population has already been infected with the virus – and so is immune.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="./../imgs/card/slider/1.jpg" alt="" class="slider-card__img">
+                        <h5 class="slider-card__title--mobile">
+                            Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?
+                        </h5>
+                        <div class="slider-card__wrapper">
+                            <h4 class="slider-card__title">Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?</h4>
+                            <p class="slider-card__text">
+                                The authorities are hoping to find that a substantial proportion of the population has already been infected with the virus – and so is immune.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <nav class="slider__nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="121" height="4" viewBox="0 0 121 4" fill="none">
+                        <path opacity="0.2" d="M0 0H15V4H0V0Z" fill="#EE6400"/>
+                        <path d="M32 0H57V4H32V0Z" fill="#EE6400"/>
+                        <path opacity="0.2" d="M74 0H89V4H74V0Z" fill="#EE6400"/>
+                        <path opacity="0.2" d="M106 0H121V4H106V0Z" fill="#EE6400"/>
+                    </svg>
+                </nav>
             
+            
+            </div>
         </section>
     </main>
-    <footer class="footer">
-
+    <footer class="footer" style="background: #EE6400">
+        <div class="footer__logo">
+            <img src="./../imgs/footer/logo.svg" alt="Logo">
+            <span>copyright <img src="./../imgs/footer/icon.svg" alt=""> 2020 | NBC NEWS</span>
+        </div>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Do not sell my personal info</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Terms of Service</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">nbcnews.com Site Map</a>
+            </li>
+        </ul>
+        <div class="footer__wrapper">
+            <nav class="footer__nav">
+                <ul class="footer__list-nav">
+                    <li><a href="#" class="footer__link">About</a></li>
+                    <li><a href="#" class="footer__link">Contact</a></li>
+                    <li><a href="#" class="footer__link">Careers</a></li>
+                    <li><a href="#" class="footer__link">Coupons</a></li>
+                </ul>
+            </nav>
+            <ul class="footer__socials">
+                <li><a href="#" class="footer__social"><img src="./../imgs/footer/socilas/wifi.svg" alt="WiFi"></a></li>
+                <li><a href="#" class="footer__social"><img src="./../imgs/footer/socilas/twitter.svg" alt="twitter"></a></li>
+                <li><a href="#" class="footer__social"><img src="./../imgs/footer/socilas/reddit.svg" alt="reddit"></a></li>
+                <li><a href="#" class="footer__social"><img src="./../imgs/footer/socilas/facebook.svg" alt="facebook"></a></li>
+            </ul>
+        </div>
     </footer>
+    <script src="./../js/search.js">
+    </script>
 </body>
 </html>
