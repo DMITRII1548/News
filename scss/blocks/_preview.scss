@@ -1,0 +1,20 @@
+.preview {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 241px;
+}
+
+.preview__title {
+    color: #FFF;
+
+    font-family: IBM Plex Serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    width: 800px;
+}

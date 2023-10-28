@@ -35,7 +35,7 @@
 .footer__list {
     display: grid;
 
-    @include mediaLaptop {
+    @include mediaTablet {
         display: none;
     }
 }
