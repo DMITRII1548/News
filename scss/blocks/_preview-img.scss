@@ -1,6 +1,7 @@
 .preview-img {
     display: flex;
     justify-content: center;
+    z-index: 9;
     
 }
 
@@ -8,4 +9,5 @@
     margin-top: -211px;
     width: 1050px;
     height: 423px;
+    z-index: 9;
 }

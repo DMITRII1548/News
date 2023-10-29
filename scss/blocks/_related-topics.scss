@@ -1,0 +1,24 @@
+.related-topics {
+    display: grid;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    padding-left: 277px;
+    padding-right: 277px;
+}
+
+.related-topics__title {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 146.631%; /* 29.326px */
+}
+
+.related-topics__items {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 22px;
+
+    margin-top: 15px;
+}
