@@ -4,6 +4,10 @@
     padding-top: 45px;
     width: 63px;
     row-gap: 60px;
+
+    @include mediaTablet {
+        display: none;
+    }
 }
 
 .aside-actions__info {

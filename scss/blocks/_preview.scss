@@ -9,6 +9,17 @@
 
     position: relative;
 
+    @include mediaTablet {
+        align-items: flex-end;
+        
+        padding-top: 53px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+
+        height: 256px;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -27,12 +38,16 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 1344px;
+        width: 70%;
         height: 6px;
 
         background: rgba(#EE6400, 0.9);
         border-radius: 1px;
         z-index: 2;
+
+        @include mediaTablet {
+            width: 40%;
+        }
     }
 }
 
@@ -46,4 +61,11 @@
     line-height: normal;
 
     width: 800px;
+
+    @include mediaTablet {
+        width: 100%;
+
+        max-width: 500px;
+        font-size: 26px;
+    }
 }

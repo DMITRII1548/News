@@ -2,6 +2,23 @@
     display: grid;
     row-gap: 9px;
     width: 255px;
+
+    @include mediaTablet {
+        width: auto;
+        max-width: 335px;
+        min-width: 280px;
+    }
+
+    &--mobile {
+        display: none;
+
+        @include mediaTablet {
+            display: grid;
+            margin-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 28px;
+        }
+    }
 }
 
 .mini-card__heading {
@@ -14,6 +31,12 @@
 
 .mini-card__wrapper {
 
+}
+
+.mini-card__img {
+    @include mediaTablet {
+        width: 100%;
+    }
 }
 
 .mini-card__container {
